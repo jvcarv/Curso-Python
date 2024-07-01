@@ -1,0 +1,31 @@
+<div class="top-menu-space"></div>
+
+<label class="not-visible" for="close-menu">Close Menu</label>
+<input class="close-menu" type="checkbox" id="close-menu" role="button" aria-label="Close Menu">
+
+<aside class="menu">
+  <div>
+    <h1 class="logo">
+      <a onclick="getElementById('close-menu').checked = false;" href="#home">LOGO</a>
+    </h1>
+    <nav>
+      <ul onclick="getElementById('close-menu').checked = false;">
+        <li>
+          <a href="{%url 'home:home' %}">Home</a>
+        </li>
+        <li>
+          <a href="{%url 'home:top' %}">Top 3</a>
+        </li>
+        <li>
+          <a href="{%url 'home:galeria' %}">Galeria</a>
+        </li>
+        <li>
+          <a href="#latest-work">work</a>
+        </li>
+        <li>
+          <a href="#footer">contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</aside>
